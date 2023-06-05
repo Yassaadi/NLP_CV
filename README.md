@@ -2,6 +2,44 @@
 
 Yassine Assaadi: NLP and CNN for products (image+text) clustering
 
+# Objectif
+The mission is to conduct a feasibility study for a product classification engine in its initial iteration. The engine will be based on an image and a description to automate the assignment of product categories.
+
+# Steps
+Preprocess the text or image data, depending on the case.
+Extract features from the data.
+Reduce the dimensionality to 2D, projecting the products onto a 2D graph where each point's color corresponds to the actual category.
+Analyze the graph to determine the feasibility of automatically grouping products of the same category based on descriptions or images.
+Perform a quantitative measure to confirm the visual analysis by calculating the similarity between the actual categories and the categories obtained from clustering.
+The goal is to demonstrate the feasibility of automatically grouping products of the same category using this approach.
+
+# constraints:
+## Text features
+To extract text features, the following approaches need to be implemented:
+
+Two bag-of-words approaches: simple word counting and TF-IDF.
+
+A traditional word/sentence embedding approach using Word2Vec (or Glove or FastText).
+
+A word/sentence embedding approach using BERT.
+
+A word/sentence embedding approach using USE (Universal Sentence Encoder).
+
+Attached is an example implementation of these text feature extraction approaches on a different dataset. It is recommended to use it as a starting point to save time.
+
+## Image features
+To extract image features, the following need to be implemented:
+
+SIFT algorithm.
+
+A CNN Transfer Learning algorithm.
+
+
+
+
+
+
+
 ![Assaadi_Yassine_2_pre╠üsentation_022023  pptx (1)](https://github.com/Yassaadi/NLP_CV/assets/106546639/935766de-fec3-418e-87e6-7052c2da38b6)
 ![Assaadi_Yassine_2_pre╠üsentation_022023  pptx (2)](https://github.com/Yassaadi/NLP_CV/assets/106546639/4e4c2192-0cbf-4143-8f40-bc5917bc477d)
 ![Assaadi_Yassine_2_pre╠üsentation_022023  pptx (3)](https://github.com/Yassaadi/NLP_CV/assets/106546639/d7ea5610-5485-423a-89df-258d4b95979a)
